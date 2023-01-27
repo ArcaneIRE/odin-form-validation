@@ -1,0 +1,92 @@
+form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: min(100vw, 450px);
+  padding: 2rem min(5vw, 3rem);
+  border-radius: 1rem;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0.3rem 0.3rem 0.9rem 0rem rgb(156, 156, 156);
+}
+
+form h2 {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0rem;
+  border: none;
+}
+
+.fieldset-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 0.1em;
+}
+
+.error-message {
+  margin: 0;
+  color: red;
+}
+
+label {
+  letter-spacing: 0.05em;
+}
+
+input,
+select {
+  box-sizing: border-box;
+  padding: 0.4em 0.5em;
+  width: 100%;
+  border-radius: 0.2em;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+select {
+  background-color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+button {
+  padding: 0.8em;
+  width: 6.5em;
+  border-radius: 0.3em;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: rgb(252, 99, 99);
+}
+
+button[type="reset"]:hover {
+  background-color: rgb(236, 59, 59);
+}
+
+button[type="submit"] {
+  background-color: rgb(21, 101, 250);
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(0, 74, 212);
+}
+
+button:active {
+  scale: 0.97;
+}

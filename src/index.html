@@ -10,6 +10,60 @@
   <script src="form-validation.js" defer></script>
 </head>
 <body>
+  <form action="" novalidate>
+    <h2>Create Account</h2>
+      
+    <fieldset>
+      <div class="fieldset-heading">
+        <label for="email">Email Address:</label>
+        <p class="error-message"></p>
+      </div>
+      <input type="email" name="email" id="email" required>
+    </fieldset>
 
+    <fieldset>
+      <div class="fieldset-heading">
+        <label for="country">Country:</label>
+        <p class="error-message"></p>
+      </div>
+      <select id="country" required>
+        <option value="" disabled selected hidden>Select Country</option>
+        <option value="fr">France</option>
+        <option value="de">Germany</option>
+        <option value="ie">Ireland</option>
+        <option value="ch">Switzerland</option>
+        <option value="nl">The Netherlands</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-heading">
+        <label for="zip">ZIP Code:</label>
+        <p class="error-message"></p>
+      </div>
+      <input type="text" id="zip" required>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-heading">
+        <label for="password">Password:</label>
+        <p class="error-message"></p>
+      </div>
+      <input type="password" name="password" id="password" required>
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-heading">
+        <label for="confirm-password">Confirm Password:</label>
+        <p class="error-message"></p>
+      </div>
+      <input type="password" name="confirm-password" id="confirm-password" required>
+    </fieldset>
+
+    <div class="buttons">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
 </body>
 </html>

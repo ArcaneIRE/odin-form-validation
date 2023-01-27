@@ -1,2 +1,15 @@
 @import "normalize.css";
 @import "form.css";
+
+body {
+  display: grid;
+  place-content: center;
+  margin: 0;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
