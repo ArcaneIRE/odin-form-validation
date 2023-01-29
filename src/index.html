@@ -7,7 +7,7 @@
 
   <link rel="stylesheet" href="index.css">
 
-  <script src="form-validation.js" defer></script>
+  <script src="formValidation.js" type="module" defer></script>
 </head>
 <body>
   <form action="" novalidate>
@@ -16,7 +16,7 @@
     <fieldset>
       <div class="fieldset-heading">
         <label for="email">Email Address:</label>
-        <p class="error-message"></p>
+        <p id="email-error-message" class="error-message"></p>
       </div>
       <input type="email" name="email" id="email" required>
     </fieldset>
@@ -24,7 +24,7 @@
     <fieldset>
       <div class="fieldset-heading">
         <label for="country">Country:</label>
-        <p class="error-message"></p>
+        <p id="country-error-message" class="error-message"></p>
       </div>
       <select id="country" required>
         <option value="" disabled selected hidden>Select Country</option>
@@ -39,7 +39,7 @@
     <fieldset>
       <div class="fieldset-heading">
         <label for="zip">ZIP Code:</label>
-        <p class="error-message"></p>
+        <p id="zip-error-message" class="error-message"></p>
       </div>
       <input type="text" id="zip" required>
     </fieldset>
@@ -47,17 +47,17 @@
     <fieldset>
       <div class="fieldset-heading">
         <label for="password">Password:</label>
-        <p class="error-message"></p>
+        <p id="password-error-message" class="error-message"></p>
       </div>
-      <input type="password" name="password" id="password" required>
+      <input type="password" name="password" id="password" minlength="6" required>
     </fieldset>
 
     <fieldset>
       <div class="fieldset-heading">
         <label for="confirm-password">Confirm Password:</label>
-        <p class="error-message"></p>
+        <p id="confirm-password-error-message" class="error-message"></p>
       </div>
-      <input type="password" name="confirm-password" id="confirm-password" required>
+      <input type="password" name="confirm-password" id="confirm-password" minlength="6" required>
     </fieldset>
 
     <div class="buttons">

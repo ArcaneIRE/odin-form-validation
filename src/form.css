@@ -30,6 +30,7 @@ fieldset {
 .fieldset-heading {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   gap: 1rem;
   padding: 0 0.1em;
 }
@@ -41,6 +42,7 @@ fieldset {
 
 label {
   letter-spacing: 0.05em;
+  flex-shrink: 0;
 }
 
 input,
@@ -59,11 +61,6 @@ select {
 .invalid {
   border: 1px solid red;
   outline: 1px solid red;
-}
-
-.valid {
-  border: 1px solid green;
-  outline: 1px solid green;
 }
 
 .buttons {
@@ -101,4 +98,24 @@ button[type="submit"]:hover {
 
 button:active {
   scale: 0.97;
+}
+
+button.invalid-submission {
+  animation-name: fade-colour-in;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: forward;
+}
+
+@keyframes fade-colour-in {
+  0% {
+    filter: grayscale(100%);
+  }
+  75% {
+    filter: grayscale(75%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
 }
