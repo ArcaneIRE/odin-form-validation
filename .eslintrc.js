@@ -12,5 +12,6 @@ module.exports = {
   rules: {
     "import/extensions": ["error", "always"],
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
+    "no-param-reassign": ["error", { props: false }],
   },
 };
