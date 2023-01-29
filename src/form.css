@@ -56,6 +56,16 @@ select {
   background-color: white;
 }
 
+.invalid {
+  border: 1px solid red;
+  outline: 1px solid red;
+}
+
+.valid {
+  border: 1px solid green;
+  outline: 1px solid green;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
